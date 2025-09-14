@@ -1,0 +1,2 @@
+fn corner_frequency(r: ElectricResistance, c: Capacitance) -> Frequency =
+    1 / ( 2*pi * r * c)

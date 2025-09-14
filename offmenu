@@ -13,7 +13,7 @@ case "$ANSWER" in
 		exit 0
 		;;
 	"$hibernate")
-		sudo zzz
+		loginctl suspend
 		exit 0
 		;;
 	"$poweroff")

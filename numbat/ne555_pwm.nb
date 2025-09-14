@@ -1,0 +1,4 @@
+fn T_on  (r1: ElectricResistance, r2: ElectricResistance, c: Capacitance) -> Time = 0.693 * (r1 + r2) * c
+fn T_off (r2: ElectricResistance, c: Capacitance) -> Time = 0.693 * r2 * c
+fn T_period (r1: ElectricResistance, r2: ElectricResistance, c: Capacitance) -> Time = T_on(r1, r2, c) + T_off(r2, c)
+fn switching_frequency (r1: ElectricResistance, r2: ElectricResistance, c: Capacitance) -> Frequency = 1 / T_period(r1, r2, c)
